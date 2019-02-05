@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+</head>
+<body>
+<h1 id='title'> Survey Form </h1>
+<div id='outer'>
+  <p id='description'> Tell me how good at making forms I am </p>
+  <form id='survey-form'>
+    <div id="name-label"> Enter Your Name:</div>
+    <input type="text" id="name" placeholder="name">
+    <div id="email-label"> Enter Your Email:</div>
+    <input type="email" id="email" placeholder="email">
+    <div id="number-label"> Rate my form out of 10:</div>
+    <input type="number" id="number" placeholder="rate my form out of 10" min="0" max="10" step="1">
+    <div id="dropdown-label">What area of my form page needs the most improvement?</div>
+    <select id="dropdown" form="survey-form">
+      <option disabled selected value>select an option</option>
+      <option> layout </option>
+      <option> design </option>
+      <option> questions </option>
+      <option> graphics </option>
+      <option> prefer not to say </option>
+    </select>
+    <div id="radio-label">How honest are you being?</div>
+    <input type="radio" name="radio" value="very">Very Honest<br>
+    <input type="radio" name="radio" value="somewhat">Somewhat Honest<br>
+      <input type="radio" name="radio" value="not">Not Honest<br>
+    <div id="checkbox-label">What animals do you like?</div>
+    <input type="checkbox" name="animal" value="cats">Cats<br>
+      <input type="checkbox" name="animal" value="dogs">Dogs<br>
+      <input type="checkbox" name="animal" value="lions">Lions<br>
+      <input type="checkbox" name="animal" value="wolves">Wolves<br>
+      <input type="checkbox" name="animal" value="elephants">Elephants<br>
+    <div id="text-label">What else?</div>
+    <textarea id="comments" class="input-field"  name="comment" placeholder="Let me know"></textarea> <br>
+    <button id="submit">Submit</button>
+    </form>
+   </div>
+</body>
+</html>
